@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शुभ विवाह - सुरभि एवं राहुल | Shubh Vivah</title>
+
+    <!-- Meta tags for premium SEO and sharing -->
+    <meta name="description" content="सुरभि सावन संग राहुल कुमार के पावन परिणय संस्कार का मांगलिक निमंत्रण पत्र।">
+    <meta name="keywords"
+        content="Surabhi Rahul Wedding, Royal Indian Wedding, Wedding Invitation, Shubh Vivah, शुभ विवाह">
+
+    <!-- Google Fonts for Royal Indian Aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Marcellus&family=Noto+Serif+Devanagari:wght@400;700;900&family=Rozha+One&family=Yatra+One&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Elegant Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Fallback Canvas for Flower Showers and Particles -->
+    <canvas id="flower-canvas"></canvas>
+
+    <!-- Cursor Sparkles Container -->
+    <div id="sparkle-container"></div>
+
+    <!-- Music Controller -->
+    <button id="music-btn" class="hidden" aria-label="Toggle Music">
+        <i class="fa-solid fa-music"></i>
+        <div class="music-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <!-- Background Audio Loop -->
+    <audio id="bg-music" src="https://vinitshahdeo.github.io/Wedding-Invitation/assets/mp3/song.mp3" loop></audio>
+
+    <!-- SECTION 0: ENTER OVERLAY (Envelope / Gate Opening) -->
+    <div id="enter-overlay">
+        <div class="envelope-container">
+            <div class="envelope-gate left-gate"></div>
+            <div class="envelope-gate right-gate"></div>
+            <div class="envelope-card">
+                <div class="envelope-content">
+                    <div class="ganesha-logo">
+                        <svg class="gold-svg" viewBox="0 0 100 130" width="70" height="90">
+                            <!-- Golden Ganesha minimal outline like the reference design -->
+                            <g fill="none" stroke="url(#goldGradient)" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <!-- Top tilak / bindi mark -->
+                                <circle cx="50" cy="18" r="4.5" fill="url(#goldGradient)" stroke="none" />
+                                <circle cx="50" cy="30" r="2.5" fill="url(#goldGradient)" stroke="none" />
+                                <!-- Head circle -->
+                                <circle cx="50" cy="50" r="18" />
+                                <!-- Base curved petal / trunk arc -->
+                                <path d="M40,78 Q50,70 60,78 Q50,86 40,78 Z" fill="url(#goldGradient)" stroke="none" />
+                                <path d="M50,68 L50,76" stroke-width="3.5" />
+                            </g>
+                            <defs>
+                                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#BF953F" />
+                                    <stop offset="30%" stop-color="#FCF6BA" />
+                                    <stop offset="60%" stop-color="#B38728" />
+                                    <stop offset="100%" stop-color="#AA771C" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="title-gold">॥ श्री गणेशाय नमः ॥</h2>
+                    <div class="names-intro">
+                        <span class="intro-name">सुरभि</span>
+                        <span class="intro-sang-badge">संग</span>
+                        <span class="intro-name">राहुल</span>
+                    </div>
+                    <button id="enter-btn" class="gold-btn">
+                        <span class="btn-text">Open Invitation</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SCROLLABLE SITE CONTAINER -->
+    <div id="main-content" class="hidden">
+
+        <!-- SECTION 1: OPENING CINEMATIC INTRO -->
+        <section id="cinematic-intro" class="section-full active-cinematic">
+            <div class="intro-bg-overlay"></div>
+            <div class="cinematic-container">
+                <div class="glowing-om-container">
+                    <div class="om-symbol">ॐ</div>
+                    <div class="divine-rays"></div>
+                </div>
+                <div class="smoke-layer"></div>
+                <div class="divine-blessings-intro">
+                    <span class="bell-icon"><i class="fa-solid fa-bell"></i></span>
+                    <p class="spiritual-subtitle">An Auspicious Union</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: GANESH VANDANA -->
+        <section id="ganesh-vandana" class="scroll-reveal section-padding">
+            <div class="glass-card main-card-layout">
+                <div class="card-deco-top"></div>
+                <div class="ganesha-art">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23D4AF37'><path d='M50,10 C42,10 38,15 38,22 C38,25 40,28 43,29 C38,30 33,35 31,40 C28,48 29,57 34,64 C37,68 42,71 47,72 C47.5,75 48,78 47.5,81 C46,81 44,79 42,77 C40,75 37,75 35,77 C33,79 33,82 35,84 C39,88 44.5,89 50,89 C55.5,89 61,88 65,84 C67,82 67,79 65,77 C63,75 60,75 58,77 C56,79 54,81 52.5,81 C52,78 52.5,75 53,72 C58,71 63,68 66,64 C71,57 72,48 69,40 C67,35 62,30 57,29 C60,28 62,25 62,22 C62,15 58,10 50,10 Z M50,14 C52,14 54,16 54,18.5 C54,21 52,23 50,23 C48,23 46,21 46,18.5 C46,16 48,14 50,14 Z M48,32 C49,32 51,32 52,32 C57.5,33 61,37 63,42 C64,46 63,52 61,56 C58.5,60 54.5,62 50,62 C45.5,62 41.5,60 39,56 C37,52 36,46 37,42 C39,37 42.5,32 48,32 Z'/></svg>"
+                        alt="Ganesha" class="ganesha-svg-img">
+                </div>
+                <div class="shloka-text devanagari-font">
+                    <p class="glowing-text">॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ॥</p>
+                    <p class="glowing-text">॥ निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</p>
+                </div>
+                <div class="divider-line">
+                    <span class="divider-flower">🌸</span>
+                </div>
+                <div class="translation-text hindi-font">
+                    "भगवान श्री गणेश से प्रार्थना है कि<br>
+                    सुरभि एवं राहुल के शुभ विवाह समारोह को<br>
+                    सदैव मंगलमय एवं निर्विघ्न सम्पन्न करें।"
+                </div>
+                <div class="card-deco-bottom"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: MANGAL SHLOKA -->
+        <section id="mangal-shloka" class="scroll-reveal section-padding">
+            <div class="glass-card main-card-layout">
+                <div class="card-deco-top"></div>
+                <div class="divine-symbol">
+                    <i class="fa-solid fa-dharmachakra divine-chakra-spin"></i>
+                </div>
+                <div class="shloka-text devanagari-font">
+                    <p class="glowing-text">॥ मङ्गलम् भगवान विष्णुः ॥</p>
+                    <p class="glowing-text">॥ मङ्गलम् गरुडध्वजः ॥</p>
+                    <p class="glowing-text">॥ मङ्गलम् पुण्डरीकाक्षः ॥</p>
+                    <p class="glowing-text">॥ मङ्गलाय तनो हरिः ॥</p>
+                </div>
+                <div class="divider-line">
+                    <span class="divider-flower">🌼</span>
+                </div>
+                <div class="translation-text hindi-font">
+                    "ईश्वर की असीम कृपा एवं परिवार के आशीर्वाद से<br>
+                    दो आत्माएँ एक पवित्र परिणय सूत्र में बंधने जा रही हैं।"
+                </div>
+                <div class="card-deco-bottom"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: MAIN INVITATION -->
+        <section id="main-invitation" class="scroll-reveal section-padding">
+            <div class="glass-card invitation-card">
+                <div class="corner-border border-tl"></div>
+                <div class="corner-border border-tr"></div>
+                <div class="corner-border border-bl"></div>
+                <div class="corner-border border-br"></div>
+
+                <div class="invitation-header">
+                    <h1 class="invitation-title">Wedding Invitation</h1>
+                </div>
+
+                <div class="couple-names">
+                    <span class="groom-name text-reveal">सुरभि</span>
+                    <span class="intro-sang-badge">संग</span>
+                    <span class="bride-name text-reveal">राहुल</span>
+                </div>
+
+                <div class="divider-line">
+                    <span class="divider-flower">🏵️</span>
+                </div>
+
+                <p class="invitation-wording">
+                    "हमारे परिवार के इस मांगलिक अवसर पर<br>
+                    वर-वधू को अपना स्नेह, आशीर्वाद एवं मंगलकामनाएँ प्रदान करने<br>
+                    हेतु आपका सपरिवार पधारना हमारे लिए अत्यंत हर्ष का विषय होगा।"
+                </p>
+
+                <div class="floral-frame-deco">
+                    <div class="marigold-garland"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: EVENT TIMELINE -->
+        <section id="event-timeline" class="scroll-reveal section-padding">
+            <h2 class="section-title">मांगलिक कार्यक्रम</h2>
+
+            <div class="event-cards-list">
+                <!-- Event 1: Tilak (22 Nov) -->
+                <div class="glass-card main-card-layout event-card scroll-reveal">
+                    <div class="card-deco-top"></div>
+                    <div class="event-card-image">
+                        <img src="assets/tilak_ceremony.png" alt="तिलक एवं फलदान समारोह" class="event-illustration">
+                    </div>
+                    <div class="event-date">22 November</div>
+                    <h3 class="event-title">तिलक एवं फलदान समारोह</h3>
+                    <p class="event-desc">शुभ तिलक एवं फलदान की पावन रस्म के साथ मांगलिक वैवाहिक उत्सव का शुभारंभ।</p>
+                    <div class="card-deco-bottom"></div>
+                </div>
+
+                <!-- Event 2: Mehndi (23 Nov) -->
+                <div class="glass-card main-card-layout event-card scroll-reveal">
+                    <div class="card-deco-top"></div>
+                    <div class="event-card-image">
+                        <img src="assets/mehndi_ceremony.png" alt="मेहंदी रस्म" class="event-illustration">
+                    </div>
+                    <div class="event-date">23 November</div>
+                    <h3 class="event-title">हल्दी समारोह</h3>
+                    <p class="event-desc">स्नेह का हल्दी लेपन, गिरधारी मटकोर एवं भगवान श्री सत्यनारायण जी की पावन कथा व
+                        कलश पूजन।</p>
+                    <div class="card-deco-bottom"></div>
+                </div>
+
+                <!-- Event 3: Haldi, Matkor & Satyanarayan Puja (24 Nov) -->
+                <div class="glass-card main-card-layout event-card scroll-reveal">
+                    <div class="card-deco-top"></div>
+                    <div class="overlapping-circles-wrap">
+                        <div class="circle-item circle-left">
+                            <img src="assets/haldi_ceremony.png" alt="हल्दी रस्म" class="event-illustration">
+                        </div>
+                        <div class="circle-item circle-right">
+                            <img src="assets/satyanarayan_puja.png" alt="सत्यनारायण पूजन" class="event-illustration">
+                        </div>
+                    </div>
+                    <div class="event-date">24 November</div>
+                    <h3 class="event-title">मेहंदी, मटकोर एवं श्री सत्यनारायण पूजन</h3>
+                    <p class="event-desc">सगुन की मेहंदी, पारंपरिक मंगल गीत एवं खुशियों का उल्लास।</p>
+                    <div class="card-deco-bottom"></div>
+                </div>
+
+                <!-- Event 4: Shubh Vivah (25 Nov) -->
+                <div class="glass-card main-card-layout event-card golden-border scroll-reveal">
+                    <div class="card-deco-top"></div>
+                    <div class="event-card-image">
+                        <img src="assets/shubh_vivah.png" alt="शुभ विवाह" class="event-illustration">
+                    </div>
+                    <div class="event-date highlight-text">25 November (शुभ विवाह)</div>
+                    <h3 class="event-title highlight-title">शुभ विवाह (पाणिग्रहण संस्कार)</h3>
+                    <p class="event-desc">शुभ लग्न, वरमाला, सिन्दूरदान एवं सात फेरों के साथ पावन परिणय सूत्र में आबद्ध
+                        होने की मंगल वेला।</p>
+                    <div class="card-deco-bottom"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: COUNTDOWN -->
+        <section id="countdown" class="scroll-reveal section-padding">
+            <h2 class="section-title">The Auspicious Countdown</h2>
+            <div class="countdown-container">
+                <div class="countdown-card glass-card">
+                    <span id="days" class="countdown-number">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-card glass-card">
+                    <span id="hours" class="countdown-number">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-card glass-card">
+                    <span id="minutes" class="countdown-number">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-card glass-card">
+                    <span id="seconds" class="countdown-number">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: FINAL MESSAGE -->
+        <section id="final-message" class="scroll-reveal section-padding">
+            <div class="glass-card main-card-layout">
+                <div class="card-deco-top"></div>
+                <div class="translation-text hindi-font final-blessings">
+                    "आपका स्नेह, आशीर्वाद एवं शुभकामनाएँ<br>
+                    सुरभि एवं राहुल के जीवन को<br>
+                    सदैव सुख, शांति, समृद्धि एवं प्रेम से भर दें।"
+                </div>
+                <div class="divider-line">
+                    <span class="divider-flower">🙏</span>
+                </div>
+                <div class="invite-footer-text devanagari-font">
+                    आप सपरिवार सादर आमंत्रित हैं।
+                </div>
+                <div class="card-deco-bottom"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: THANK YOU & CONTACT -->
+        <footer id="thank-you" class="scroll-reveal">
+            <div class="thank-you-container">
+                <h2 class="thank-you-title">सादर धन्यवाद</h2>
+                <p class="thank-you-subtitle">Thank You</p>
+                <div class="gold-line"></div>
+                <p class="family-host" style="font-size: 1.3rem; margin-bottom: 6px;"> विनय कुमार पाण्डेय </p>
+                <p style="color: #ffd700; margin-bottom: 4px;">Director : माँ सरस्वती शिशु मंदिर</p>
+                <p style="color: #f1dfc5; margin-bottom: 12px;">धरमपुर बांदे हाट, समस्तीपुर (बिहार)</p>
+                <p style="margin-bottom: 15px;">
+                    <a href="tel:9934981049"
+                        style="color: #ffd700; text-decoration: none; font-size: 1.2rem; font-weight: bold; background: rgba(255,215,0,0.15); padding: 6px 18px; border-radius: 20px; border: 1px solid #ffd700;">
+                        <i class="fa-solid fa-phone"></i> 9934981049
+                    </a>
+                </p>
+                <p class="family-host" style="font-size: 1rem; opacity: 0.85;">समस्त पाण्डेय परिवार</p>
+                <div class="footer-diyas">
+                    <span class="diya"><i class="fa-solid fa-fire"></i></span>
+                    <span class="diya"><i class="fa-solid fa-fire"></i></span>
+                    <span class="diya"><i class="fa-solid fa-fire"></i></span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- SECTION 9: VIVAH ASTHAL (VENUE & LOCATION) -->
+        <section id="vivah-asthal" class="scroll-reveal section-padding">
+            <div class="glass-card main-card-layout venue-card">
+                <div class="card-deco-top"></div>
+                <div class="venue-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h2 class="section-title venue-title">विवाह स्थल</h2>
+                <p class="venue-subtitle">Wedding Venue & Direction</p>
+                <div class="gold-line"></div>
+
+                <div class="venue-details">
+                    <p class="venue-name">आप सभी की गरिमामयी उपस्थिति में सभी कार्यक्रम हमारे पैतृक निवास स्थान पर
+                        आयोजित किए जाएंगे।</p>
+                    <p class="venue-address">धरमपुर बांदे, समस्तीपुर (बिहार)</p>
+                </div>
+
+                <div class="venue-action">
+                    <a href="https://goo.gl/maps/ixV7PB6MqAv3z2Gq9" target="_blank" rel="noopener noreferrer"
+                        class="gold-btn location-btn">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span class="btn-text">Get Location / Direction</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+                <div class="card-deco-bottom"></div>
+            </div>
+
+            <div class="designer-credits">
+                <span class="credit-label">Designed by</span>
+                <span class="credit-name">Sudhanshu Ranjan</span>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
